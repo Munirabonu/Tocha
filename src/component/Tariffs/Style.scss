@@ -1,20 +1,17 @@
 @import "../../scss/variables.scss";
 .tariffs {
+  padding: 100px 0;
   text-align: center;
   color: $black;
-  background: rgb(248, 121, 121);
   h2 {
     margin-bottom: 16px;
   }
-  p {
+  .fs-2432 {
     font-weight: 700;
     margin-bottom: 40px;
   }
 }
 
-.car p {
-  margin: 8px 0 33px 0;
-}
 .alice-carousel__dots-item:not(.__custom):hover,
 .alice-carousel__dots-item:not(.__custom).__active {
   background-color: $violet;
@@ -41,3 +38,4 @@
     display: block;
   }
 }
+

@@ -25,10 +25,8 @@ function Index() {
       <p className="fs-2432">Стоимость зависит от трафика сайта</p>
       <div className="content__tariffs">
         <AliceCarousel
-          autoPlay
           autoPlayInterval={1500}
           mouseTracking
-          infinite
           disableButtonsControls
           items={items}
           responsive={{

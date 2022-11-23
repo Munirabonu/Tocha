@@ -1,0 +1,28 @@
+@import "../../scss/variables.scss";
+.box {
+  max-width: 350px;
+  background: #fcfeff;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  margin: auto;
+  h6 {
+    background: rgba(104, 94, 214, 0.05);
+    color: $violet;
+    padding: 6px 0;
+  }
+  h5 {
+    margin-top: 40px;
+    white-space: pre-wrap;
+    margin-bottom: 32px;
+  }
+  p {
+    font-weight: 500;
+    margin-bottom: 46px;
+  }
+  .btn {
+    width: 287px;
+    font-feature-settings: "salt" on, "liga" off;
+    color: $white;
+    margin-bottom: 50px;
+  }
+}
