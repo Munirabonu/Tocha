@@ -1,10 +1,9 @@
-import './App.css';
+import './scss/styles';
 
 function App() {
   return (
     <div className="App">
-      
-      <h1>Bismillah</h1>
+      <h1>bismillah</h1>
     </div>
   );
 }
