@@ -7,7 +7,7 @@ export default function Home() {
   return (
     <div>
       <Generic />
-      {/* <TochaOnline /> */}
+      <TochaOnline />
       <Tariffs/>
     </div>
   );
