@@ -1,0 +1,43 @@
+@import "../../scss/variables.scss";
+.tariffs {
+  text-align: center;
+  color: $black;
+  background: rgb(248, 121, 121);
+  h2 {
+    margin-bottom: 16px;
+  }
+  p {
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+}
+
+.car p {
+  margin: 8px 0 33px 0;
+}
+.alice-carousel__dots-item:not(.__custom):hover,
+.alice-carousel__dots-item:not(.__custom).__active {
+  background-color: $violet;
+  border: 1px solid $violet;
+}
+.alice-carousel__dots {
+  margin-top: 24px;
+  display: none;
+}
+.alice-carousel__dots-item:not(.__custom) {
+  width: 10px;
+  height: 10px;
+  border: 2px solid rgba(104, 94, 214, 0.5);
+}
+.alice-carousel__dots-item:not(.__custom):not(:last-child) {
+  margin-right: 10px;
+}
+.alice-carousel__dots-item:not(.__custom) {
+  background: #efefef;
+}
+
+@media (max-width: 768px) {
+  .alice-carousel__dots {
+    display: block;
+  }
+}

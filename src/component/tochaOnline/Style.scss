@@ -1,29 +1,31 @@
 @import "../../scss/variables.scss";
+
 .tocha-online {
   padding: 70px 0 82px 0;
   display: flex;
   justify-content: space-between;
+  color: $black;
   h2 {
     margin-bottom: 68px;
   }
-}
-
-.left__info-content {
-  max-width: 522px;
-  .box {
-    display: flex;
-    align-items: center;
-    gap: 26px;
-  }
-  .box:not(:last-child) {
-    margin-bottom: 48px;
-    .title__box {
-      h6 {
-        margin-bottom: 8px;
+  .left__info-content {
+    max-width: 522px;
+    .box {
+      display: flex;
+      align-items: center;
+      gap: 26px;
+    }
+    .box:not(:last-child) {
+      margin-bottom: 48px;
+      .title__box {
+        h6 {
+          margin-bottom: 8px;
+        }
       }
     }
   }
 }
+
 @media (max-width: 1250px) {
   .right img {
     width: 100%;
