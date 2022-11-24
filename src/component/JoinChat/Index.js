@@ -1,6 +1,9 @@
 import React from "react";
+
 import chatImg from "../../medias/images/chat-anim.png";
+
 import "./Style.scss";
+
 function Index() {
   return (
     <div className="chat container">
@@ -19,5 +22,5 @@ function Index() {
     </div>
   );
 }
-
+// Don't be nervous!
 export default Index;
