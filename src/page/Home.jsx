@@ -8,9 +8,9 @@ export default function Home() {
   return (
     <div>
       <Chat/>
-      {/* <Generic />
+      <Generic />
       <TochaOnline />
-      <Tariffs /> */}
+      <Tariffs />
     </div>
   );
 }
