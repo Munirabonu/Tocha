@@ -63,6 +63,11 @@
     max-width: 90%;
   }
 }
+@media (max-width: 900px) {
+  .container {
+    max-width: 95%;
+  }
+}
 *,
 *:after,
 *:before {

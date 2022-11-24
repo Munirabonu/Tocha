@@ -5,14 +5,16 @@ import Tariffs from "../component/Tariffs/Index";
 import Chat from "../component/JoinChat/Index";
 import Footer from "../component/Footer/Index";
 import "../scss/styles";
+import Feedback from "../component/Feedback/Index";
 export default function Home() {
   return (
     <div>
-      <Generic />
+      {/* <Generic />
       <TochaOnline />
       <Tariffs />
       <Chat />
-      <Footer />
+      <Footer /> */}
+      <Feedback />
     </div>
   );
 }
