@@ -1,0 +1,119 @@
+@import "../../scss/variables.scss";
+.footer {
+  margin-top: 90px;
+  padding-top: 111px;
+  min-height: 522px;
+  background: $black;
+  position: relative;
+  .footer--top {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    .footer--content {
+      padding-right: 157px;
+      display: flex;
+      gap: 126px;
+      h6 {
+        color: $white;
+        margin-bottom: 32px;
+      }
+      p {
+        color: $lightwhite;
+      }
+      p:not(:last-child) {
+        padding-bottom: 12px;
+      }
+    }
+  }
+  .footer--bottom {
+    position: absolute;
+    bottom: 0;
+    background: #141b23;
+    width: 100%;
+    padding: 25px;
+    p {
+      color: #d9dbe1;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .footer {
+    .footer--top {
+      .footer--content {
+        padding-right: 100px;
+        gap: 100px;
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .footer {
+    .footer--top {
+      .footer--content {
+        padding-right: 70px;
+        gap: 70px;
+      }
+    }
+  }
+}
+@media (max-width: 770px) {
+  .footer {
+    .footer--top {
+      .footer--content {
+        padding-right: 60px;
+        gap: 50px;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .footer {
+    .footer--top {
+      .footer--content {
+        padding-right: 50px;
+        gap: 40px;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .footer {
+    .footer--top {
+      .footer--content {
+        padding-right: 30px;
+        gap: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 550px) {
+  .footer {
+    padding-top: 60px;
+    min-height: 700px;
+    .footer--top {
+      .footer--content {
+        flex-direction: column;
+        padding-right: 70px;
+        gap: 25px;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .footer {
+    .footer--top {
+      .footer--content {
+        padding-right: 30px;
+      }
+    }
+  }
+}
+@media (max-width: 350px) {
+  .footer {
+    .footer--top {
+      .footer--content {
+        padding-right: 10px;
+      }
+    }
+  }
+}

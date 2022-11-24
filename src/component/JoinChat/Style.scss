@@ -85,15 +85,14 @@
 @media (max-width: 900px) {
   .chat {
     height: auto;
-    text-align: center;
     justify-content: center;
-    flex-direction: column-reverse;
+    flex-direction: column;
     padding: 20px 0;
     .img-box__chat {
       margin-left: 0;
     }
     .input-group {
-      justify-content: center;
+      justify-content: start;
     }
   }
 }
@@ -107,7 +106,7 @@
     }
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 330px) {
   .input-group {
     input {
       max-width: 170px;

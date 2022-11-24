@@ -61,7 +61,21 @@
   }
 }
 @media (max-width: 400px) {
+  .tocha-online{
+    padding-bottom: 0;
+    h2{
+      margin-bottom: 40px;
+    }
+    .left__info-content {
+    .box {
+      gap: 15px;
+    }
+  }
+  }
   .right img {
     max-width: 250px;
+  }
+  .tocha-online .left__info-content .box:not(:last-child){
+    margin-bottom: 20px;
   }
 }
