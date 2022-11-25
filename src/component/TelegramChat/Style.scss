@@ -1,0 +1,68 @@
+@import "../../scss/variables.scss";
+.telgram-chat {
+  text-align: center;
+  h1 {
+    margin-bottom: 40px;
+  }
+}
+.telegram-chat--top {
+  border: 5px solid red;
+  display: flex;
+  height: 300px;
+  justify-content: space-between;
+  .count {
+    width: 75px;
+    height: 72px;
+    background: #f1e4ff;
+    border-radius: 50%;
+    font-family: "Gilroy";
+    font-style: normal;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: $violet;
+  }
+  .top--card {
+    border: 5px solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    h5 {
+      margin-bottom: 4px;
+    }
+  }
+  .second-img {
+    justify-self: center;
+  }
+}
+.card--images {
+  display: flex;
+}
+.firstt{
+  align-self: start;
+}
+.secondd {
+  background: aqua;
+ align-self: center;
+}
+.thirdd{
+  align-self: start;
+}
+.card--images .first-img{
+  padding-top: 20px;
+  align-self: start;
+}
+.card--images .second-img{
+  padding-top: 20px;
+  align-self: start;
+}
+.card--images .third-img{
+  // padding-top: 20px;
+  align-self:center;
+}
