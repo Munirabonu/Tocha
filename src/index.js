@@ -1,6 +1,16 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Home from "./page/Home";
 
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Home />);
+import { BrowserRouter } from "react-router-dom";
+import './index.css';
+import { Root } from "./root";
+
+
+ReactDOM.createRoot(document.getElementById("root")).render(
+    <React.StrictMode>
+        <BrowserRouter>
+            <Root />
+        </BrowserRouter>
+
+    </React.StrictMode>
+);
