@@ -1,0 +1,30 @@
+.header {
+  margin-top: 120px;
+  display: flex;
+  .title {
+    font-weight: 800;
+    font-size: 50px;
+    line-height: 60px;
+    font-feature-settings: "salt" on, "liga" off;
+  }
+  .text {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 34px;
+    color: #1d2530;
+    margin: 24px 0 34px 0;
+  }
+  .blue {
+    color: #685ed6;
+  }
+  .btn {
+    outline: none;
+    border: none;
+    width: 168px;
+    height: 48px;
+    background-color: #685ed6;
+    color: white;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+    border-radius: 6px;
+  }
+}
