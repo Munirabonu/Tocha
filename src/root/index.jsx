@@ -6,9 +6,9 @@ import Home from "../page/Home";
 
 export const Root = () => {
   return (
-    <Routes>
-      
+    <Routes> 
        <Route path="/" element={<Home />} />
+       <Route path="/home" element={<Home />} />
        <Route path="/signup" element={<SignUp />} />
        <Route path="/signin" element={<SignIn />} />
       <Route path="*" element={<div>not found</div>} />
