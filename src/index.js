@@ -1,6 +1,21 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import Home from "./page/Home";
-// tets
-const root = ReactDOM.createRoot(document.getElementById("root"));
-root.render(<Home />);
+
+import { store, persistor } from "./redux/store"
+import { Provider } from "react-redux"
+import { PersistGate } from "redux-persist/integration/react"
+
+import { BrowserRouter } from "react-router-dom";
+import './index.css';
+import { Root } from "./root";
+ReactDOM.createRoot(document.getElementById("root")).render(
+
+    <Provider store={store}>
+        <PersistGate loading={null} persistor={persistor}>
+                    <BrowserRouter>
+                        <Root />
+                    </BrowserRouter>
+        </PersistGate>
+    </Provider>
+);
+

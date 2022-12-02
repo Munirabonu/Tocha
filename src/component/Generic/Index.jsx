@@ -1,8 +1,8 @@
-import React from 'react'
+import React from "react";
+import "./style.scss";
 
 export default function Generic() {
-  return (
-    <div>
-    </div>
-  )
+
+  return <div>Generic</div>;
+
 }
