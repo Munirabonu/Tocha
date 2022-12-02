@@ -67,9 +67,7 @@
 
 $breakpoint-tablet: 768px;
 @media (max-width: $breakpoint-tablet) {
-  .container {
-    padding: 32px 40px;
-  }
+  
   .navbar {
     .burger {
       display: block;
@@ -121,8 +119,11 @@ $breakpoint-tablet: 768px;
       .btn {
         width: 80%;
       }
+      .sign_in,.sign_up {
+        width:100%;
+  
+      }
     }
-
   }
 }
 

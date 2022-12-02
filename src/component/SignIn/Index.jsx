@@ -16,33 +16,33 @@ export default function SignIn() {
       password: "",
     },
     onSubmit: (item) => {
-      if (state.email == "" && state.password == "") {
-        alert("Ro`yhatdan o`ting");
-      } else if (state.email == item.email && state.password == item.password) {
+      if (state.email === "" && state.password === "") {
+        alert("Pегистр");
+      } else if (state.email === item.email && state.password === item.password) {
         navigate("/home");
         dispatch(changeLoginAction({ current: true }));
       } else {
-        alert("Siz ro`yhatdan o`tgansiz");
+        alert("Вы зарегистрированы");
       }
     },
     validationSchema: Yup.object({
       email: Yup.string()
-        .email("email kiritishda xato qildingiz")
-        .required("email kiriting"),
-      password: Yup.string().required("password kiriting"),
+        .email("Вы ошиблись при вводе адреса электронной почты")
+        .required("введите адрес электронной почты"),
+      password: Yup.string().required("Bведите пароль"),
     }),
   });
 
   return (
     <div className="sign_in">
       <form onSubmit={formik.handleSubmit}>
-        <h1 className="title">Sign in</h1>
+        <h1 className="title">Вход</h1>
         <input
           type="text"
           onChange={formik.handleChange}
           value={formik.values.email}
           id="email"
-          placeholder="Email"
+          placeholder="Эл.адрес"
         />
         <label htmlFor="email">{formik.errors.email}</label>
         <input
@@ -50,13 +50,12 @@ export default function SignIn() {
           onChange={formik.handleChange}
           value={formik.values.password}
           id="password"
-          placeholder="Password"
+          placeholder="Пароль"
         />
         <label htmlFor="password">{formik.errors.password}</label>
         <input type="submit" value="kirish" className="btn" />
         <p>
-          Ro'yxatdan o'tmaganmisiz ?{" "}
-          <Link to={"/signup"}>Ro`yhatdan o`tish</Link>
+          Не зарегистрирован? ? <Link to={"/signup"}>Регистрация</Link>
         </p>
       </form>
     </div>

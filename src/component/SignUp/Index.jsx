@@ -16,8 +16,8 @@ export default function SignUp() {
       password: "",
     },
     onSubmit: (item) => {
-      if (state.email == item.email && state.password == item.password) {
-        alert("Siz ro`yhatdan otgansiz");
+      if (state.email === item.email && state.password === item.password) {
+        alert("Вы зарегистрированы");
         navigate("/signin");
       } else {
         navigate("/home");
@@ -25,27 +25,27 @@ export default function SignUp() {
       }
     },
     validationSchema: Yup.object({
-      name: Yup.string().required("ismingizni kiriting."),
+      name: Yup.string().required("Bведите ваше имя."),
       email: Yup.string()
-        .email("email kiritishda xato qildingiz.")
-        .required("email kiriting."),
+        .email("Вы ошиблись при вводе адреса электронной почты")
+        .required("введите адрес электронной почты"),
       password: Yup.string()
-        .max(8, "8 elementdan kam bo`lishi kerak")
-        .min(3, "3 elementdan ko`p bolishi kerak")
-        .required("password kiriting."),
+        .max(8, "Должно быть меньше 8 элементов")
+        .min(3, "Элементов должно быть больше 3")
+        .required("Bведите пароль."),
     }),
   });
 
   return (
     <div className="sign_un">
       <form onSubmit={formik.handleSubmit}>
-        <h1 className="title">Sign Up</h1>
+        <h1 className="title">Регистрация</h1>
         <input
           type="text"
           onChange={formik.handleChange}
           value={formik.values.name}
           id="name"
-          placeholder="Name"
+          placeholder="Имя"
         />
         <label htmlFor="email">{formik.errors.name}</label>
         <input
@@ -53,7 +53,7 @@ export default function SignUp() {
           onChange={formik.handleChange}
           value={formik.values.email}
           id="email"
-          placeholder="Email"
+          placeholder="Эл. адрес"
         />
         <label htmlFor="email">{formik.errors.email}</label>
         <input
@@ -61,10 +61,10 @@ export default function SignUp() {
           onChange={formik.handleChange}
           value={formik.values.password}
           id="password"
-          placeholder="Password"
+          placeholder="Пароль"
         />
         <label htmlFor="password">{formik.errors.password}</label>
-        <input type="submit" value="kirish" className="btn"/>
+        <input type="submit" value="Регистрация" className="btn" />
       </form>
     </div>
   );
