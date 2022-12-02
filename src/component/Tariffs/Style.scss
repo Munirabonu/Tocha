@@ -1,0 +1,40 @@
+@import "../../scss/variables.scss";
+.tariffs {
+  padding: 100px 0;
+  text-align: center;
+  color: $black;
+  h2 {
+    margin-bottom: 16px;
+  }
+  .fs-2432 {
+    font-weight: 700;
+    margin-bottom: 40px;
+  }
+}
+
+.tariffs .alice-carousel__dots-item:not(.__custom):hover,
+.tariffs .alice-carousel__dots-item:not(.__custom).__active {
+  background-color: $violet;
+  border: 1px solid $violet;
+}
+.tariffs .alice-carousel__dots {
+  margin-top: 24px;
+  display: none;
+}
+.tariffs .alice-carousel__dots-item:not(.__custom) {
+  width: 10px;
+  height: 10px;
+  border: 2px solid rgba(104, 94, 214, 0.5);
+}
+.tariffs .alice-carousel__dots-item:not(.__custom):not(:last-child) {
+  margin-right: 10px;
+}
+.tariffs .alice-carousel__dots-item:not(.__custom) {
+  background: #efefef;
+}
+
+@media (max-width: 768px) {
+  .tariffs .alice-carousel__dots {
+    display: block;
+  }
+}

@@ -1,14 +1,72 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:wght@500&display=swap");
+@import "../scss/variables.scss";
 $breakpoint-tablet: 768px;
-
-
 .container {
   max-width: 1110px;
   margin: 0 auto;
 }
+.btn {
+  background: $violet;
+  height: 48px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  color: $white;
+}
+.btn:hover {
+  background: $btn--hover;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.14);
+}
+.btn:active {
+  background: $btn--active;
+  box-shadow: 0px 15px 30px rgba(0, 0, 0, 0.14);
+}
+.btn-light {
+  background: $btn-light;
+  height: 48px;
+  box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
+  border-radius: 6px;
+  outline: none;
+  transition: all 0.3s ease-in-out;
+  border: none;
+  cursor: pointer;
+
+  font-family: "Gilroy";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  font-feature-settings: "salt" on, "liga" off;
+  color: $violet;
+}
+
+.btn-light:hover {
+  background: $btn-light--hover;
+}
+.btn-light:active{
+  background: $violet;
+  color: $white;
+}
 @media (max-width: 1250px) {
   .container {
     max-width: 90%;
+  }
+}
+@media (max-width: 900px) {
+  .container {
+    max-width: 95%;
   }
 }
 *,

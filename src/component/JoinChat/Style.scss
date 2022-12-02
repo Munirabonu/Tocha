@@ -1,0 +1,118 @@
+@import "../../scss/variables.scss";
+.chat {
+  background-image: url("../../medias/images/bg-chat.png");
+  background-size: cover;
+  width: 100%;
+  height: 288px;
+  display: flex;
+  gap: 80px;
+  align-items: center;
+  .img-box__chat {
+    margin-left: 86px;
+    margin-top: auto;
+  }
+  .content__chat {
+    h5 {
+      color: $white;
+      margin-bottom: 32px;
+    }
+    input {
+      padding: 14px 16px;
+      width: 248px;
+      height: 52px;
+      border-radius: 5px 0px 0px 5px;
+      background: #f4f5f7;
+      outline: none;
+      border: none;
+      border: 1px solid transparent;
+
+      font-family: "Gilroy";
+      font-style: normal;
+      font-weight: 400;
+      font-size: 15px;
+      line-height: 24px;
+      color: #474a57;
+    }
+    input:hover {
+      border: 1px solid #e8e6f8;
+    }
+    input:focus {
+      border: 1px solid #605dec;
+    }
+    input:invalid {
+      border: 1px solid #f93232;
+    }
+    .input-group {
+      display: flex;
+      align-items: center;
+    }
+    .send-btn__chat {
+      width: 120px;
+      height: 48px;
+      color: $white;
+      background: #18191f;
+      border-radius: 0px 5px 5px 0px;
+      transition: all 0.1s linear;
+      cursor: pointer;
+      &:hover {
+        font-weight: 800;
+        height: 52px;
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .chat {
+    gap: 50px;
+    img {
+      width: 100%;
+      max-width: 280px;
+      height: auto;
+    }
+  }
+}
+@media (max-width: 1000px) {
+  .chat {
+    gap: 20px;
+    .img-box__chat {
+      margin-left: 70px;
+    }
+    img {
+      max-width: 250px;
+    }
+  }
+}
+@media (max-width: 900px) {
+  .chat {
+    height: auto;
+    justify-content: center;
+    flex-direction: column;
+    padding: 20px 0;
+    .img-box__chat {
+      margin-left: 0;
+    }
+    .input-group {
+      justify-content: start;
+    }
+  }
+}
+@media (max-width: 500px) {
+  .input-group {
+    input {
+      max-width: 200px;
+    }
+    .send-btn__chat {
+      max-width: 100px;
+    }
+  }
+}
+@media (max-width: 330px) {
+  .input-group {
+    input {
+      max-width: 170px;
+    }
+    .send-btn__chat {
+      max-width: 80px;
+    }
+  }
+}

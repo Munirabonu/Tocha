@@ -1,4 +1,4 @@
-.fs-1424 {
+.fs-1420 {
   font-weight: 700;
   font-size: 14px;
   line-height: 20px;
@@ -78,7 +78,7 @@
   font-size: 50px;
   line-height: 60px;
 }
-@media (max-width: 1200px) {
+@media (max-width: 900px) {
   .fs-1424 {
     font-size: 14px;
     line-height: 20px;
@@ -112,12 +112,12 @@
     line-height: 30px;
   }
   .fs-2432 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 28px;
   }
   .fs-2434 {
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 18px;
+    line-height: 28px;
   }
   .fs-2448 {
     font-size: 24px;
@@ -128,23 +128,23 @@
     line-height: 40px;
   }
   .fs-3341 {
-    font-size: 33px;
-    line-height: 41px;
-  }
-  .fs-4664 {
-    font-size: 46px;
-    line-height: 64px;
-  }
-  .fs-4832 {
-    font-size: 48px;
+    font-size: 24px;
     line-height: 32px;
   }
+  .fs-4664 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .fs-4832 {
+    font-size: 32px;
+    line-height: 40px;
+  }
   .fs-5060 {
-    font-size: 50px;
-    line-height: 60px;
+    font-size: 32px;
+    line-height: 40px;
   }
 }
-@media (max-width: 962px) {
+@media (max-width: 500px) {
   .fs-1424 {
     font-size: 14px;
     line-height: 20px;
@@ -178,12 +178,12 @@
     line-height: 30px;
   }
   .fs-2432 {
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 20px;
+    line-height: 28px;
   }
   .fs-2434 {
-    font-size: 24px;
-    line-height: 34px;
+    font-size: 18px;
+    line-height: 28px;
   }
   .fs-2448 {
     font-size: 24px;
@@ -194,25 +194,21 @@
     line-height: 40px;
   }
   .fs-3341 {
-    font-size: 33px;
-    line-height: 41px;
-  }
-  .fs-4664 {
-    font-size: 46px;
-    line-height: 64px;
-  }
-  .fs-4832 {
-    font-size: 48px;
+    font-size: 24px;
     line-height: 32px;
   }
-  .fs-5060 {
-    font-size: 50px;
-    line-height: 60px;
+  .fs-4664 {
+    font-size: 32px;
+    line-height: 40px;
   }
-}
-@media (max-width: 768px) {
-}
-@media (max-width: 600px) {
+  .fs-4832 {
+    font-size: 32px;
+    line-height: 40px;
+  }
+  .fs-5060 {
+    font-size: 32px;
+    line-height: 40px;
+  }
 }
 @media (max-width: 400px) {
 }

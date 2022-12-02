@@ -1,0 +1,77 @@
+@import "../../scss/variables.scss";
+.feedback {
+  margin-bottom: 90px;
+  margin-top: 12px;
+  text-align: center;
+  position: relative;
+  h1 {
+    margin-bottom: 48px;
+  }
+  .quotes-img {
+    position: absolute;
+    right: 0;
+    top: 0;
+    img {
+      width: 100%;
+      max-width: 143px;
+      height: auto;
+    }
+  }
+}
+
+.feedback--content {
+  background-image: url("../../medias/images/Card.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  margin: 0 auto;
+  max-width: 540px;
+  padding: 32px;
+  h6 {
+    margin-bottom: 8px;
+  }
+  p {
+    margin-bottom: 68px;
+  }
+}
+.feedback--author {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+}
+@media (max-width: 900px) {
+  .feedback {
+    img {
+      max-width: 110px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .feedback {
+    img {
+      max-width: 90px;
+    }
+  }
+}
+@media (max-width: 550px) {
+  .feedback {
+    img {
+      max-width: 50px;
+    }
+  }
+}
+
+
+@media (max-width: 400px) {
+  .feedback {
+    padding-top: 50px;
+    h1 {
+      margin-bottom: 20px;
+    }
+  }
+  .alice-carousel__dots {
+    margin: 0;
+    margin-top: 20px;
+  }
+}
