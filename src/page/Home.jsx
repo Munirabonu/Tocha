@@ -10,7 +10,7 @@ import TelegramChat from "../component/TelegramChat/Index"
 export default function Home() {
   return (
     <div>
-      <TelegramChat/>
+      {/* <TelegramChat/> */}
       <Generic />
       <TochaOnline />
       <Tariffs />
