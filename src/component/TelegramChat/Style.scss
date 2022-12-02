@@ -4,9 +4,18 @@
   h1 {
     margin-bottom: 40px;
   }
+  .telegram-chat--bottom {
+    height: 100vh;
+    width: 100%;
+    background-image: url(../../assets/images/blur.png);
+    // background: no-repeat;
+  }
+
 }
 .telegram-chat--top {
-  border: 5px solid red;
+  background-image: url(../../assets/images/lines.png);
+  background-repeat: no-repeat;
+  // border: 5px solid red;
   display: flex;
   height: 300px;
   justify-content: space-between;
@@ -27,7 +36,7 @@
     color: $violet;
   }
   .top--card {
-    border: 5px solid;
+    // border: 5px solid;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -48,7 +57,7 @@
   align-self: start;
 }
 .secondd {
-  background: aqua;
+  // background: aqua;
  align-self: center;
 }
 .thirdd{

@@ -1,15 +1,14 @@
-.container {
-  width: 100%;
-  padding: 44px 165px;
-}
 .navbar {
+  width: 100vw;
+  padding-top: 44px;
+  padding-bottom: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: fixed;
+  position: sticky;
   top: 0;
   z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.708);
+  background-color: rgba(255, 255, 255, 0.9);
   .logo {
     transition: all 0.3s;
   }
@@ -57,14 +56,6 @@
   .button_group {
     display: flex;
     gap: 12px;
-    .btn {
-      background: #685ed6;
-      box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.07);
-      border-radius: 6px;
-      border: none;
-      height: 40px;
-      color: white;
-    }
     .sign_in {
       width: 76px;
     }

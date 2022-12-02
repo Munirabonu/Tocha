@@ -20,7 +20,7 @@ function Index() {
             </p>
           </div>
         </div>
-        <div className="card--images">
+        {/* <div className="card--images">
           <div className="first-img">
             <img src={first} alt="" />
           </div>
@@ -30,7 +30,7 @@ function Index() {
           <div className="third-img">
             <img src={third} alt="" />
           </div>
-        </div>
+        </div> */}
 
         <div className="top--card secondd">
           <div className="count">2</div>
@@ -41,7 +41,7 @@ function Index() {
             </p>
           </div>
         </div>
-        <div className="card--images">
+        {/* <div className="card--images">
           <div className="first-img">
             <img src={first} alt="" />
           </div>
@@ -51,7 +51,7 @@ function Index() {
           <div className="third-img">
             <img src={third} alt="" />
           </div>
-        </div>
+        </div> */}
         <div className="top--card thirdd">
           <div className="count">3</div>
           <div className="card--content">

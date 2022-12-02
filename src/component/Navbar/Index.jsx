@@ -61,7 +61,7 @@ export default function Navbar() {
           </ul>
         ) : (
           <div className="button_group">
-            <button onClick={sign_in} className="btn sign_in">
+            <button onClick={sign_in} className="btn-light sign_in">
               Вход
             </button>
             <button onClick={sign_up} className="btn sign_up">

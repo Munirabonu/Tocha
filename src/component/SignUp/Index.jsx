@@ -1,4 +1,4 @@
-import React, { useContext, useState } from "react";
+import React from "react";
 import "./style.scss";
 import { useFormik } from "formik";
 import * as Yup from "yup";
@@ -64,7 +64,7 @@ export default function SignUp() {
           placeholder="Password"
         />
         <label htmlFor="password">{formik.errors.password}</label>
-        <input type="submit" value="kirish" />
+        <input type="submit" value="kirish" className="btn"/>
       </form>
     </div>
   );
