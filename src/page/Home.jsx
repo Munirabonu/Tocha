@@ -11,12 +11,12 @@ export default function Home() {
   return (
     <div>
       <TelegramChat/>
-      {/* <Generic />
+      <Generic />
       <TochaOnline />
       <Tariffs />
       <Feedback />
       <Chat />
-      <Footer /> */}
+      <Footer />
     </div>
   );
 }
