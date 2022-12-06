@@ -13,10 +13,10 @@ export default function Home() {
     <div>
       <Navbar />
       <Header />
-      <TelegramChat/>
       <TochaOnline />
       <Tariffs />
       <Feedback />
+      <TelegramChat/>
       <Chat />
       <Footer />
     </div>
