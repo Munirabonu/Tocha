@@ -1,0 +1,54 @@
+.head {
+  width: 100%;
+  background: url(../assets/images/headerBg.png);
+
+}
+// @media (max-width: 1024px) {
+//   .header {
+//     img {
+//       width: 500px;
+//     }
+//   }
+// }
+// $breakpoint-tablet: 768px;
+// @media (max-width: $breakpoint-tablet) {
+//   .header {
+//     .title {
+//       line-height: 40px;
+//       font-size: 32px;
+//       font-weight: 800;
+//     }
+//     .text {
+//       font-size: 18px;
+//       line-height: 28px;
+//     }
+//     .img_wrap {
+//       img {
+//         width: 420px;
+//       }
+//     }
+//   }
+// }
+
+// $breakpoint-mobile: 426px;
+// @media (max-width: $breakpoint-mobile) {
+//   .header {
+//     padding-top: 40px;
+//     gap: 50px;
+//     flex-direction: column;
+//     .text_wrap {
+//       text-align: center;
+//     }
+//     .img_wrap {
+//       img {
+//         width: 300px;
+//       }
+//     }
+//   }
+// }
+
+
+// @media (max-width: 321px) {
+//   .header {
+//   }
+// }
