@@ -1,5 +1,8 @@
+.wrap1 {
+  background: url(../../assets/images/headerBg.png);
+}
 .header {
-  padding-top: 80px;
+  // padding-top: 80px;
   padding-bottom: 60px;
   .container {
     display: flex;
@@ -66,9 +69,4 @@ $breakpoint-mobile: 426px;
       }
     }
   }
-}
 
-@media (max-width: 321px) {
-  .header {
-  }
-}

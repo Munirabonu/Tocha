@@ -11,6 +11,7 @@ export default function Header() {
   return (
     <div className="header">
       <div className="container">
+
         <div className="text_wrap" data-aos="zoom-out-right">
           <h1 className="fs-5060">
             <span className="blue">Telegram чат </span>
