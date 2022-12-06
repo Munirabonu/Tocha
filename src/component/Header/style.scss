@@ -2,16 +2,7 @@
   padding-top: 80px;
   padding-bottom: 60px;
   display: flex;
-  .title {
-    font-weight: 800;
-    font-size: 50px;
-    line-height: 60px;
-    font-feature-settings: "salt" on, "liga" off;
-  }
   .text {
-    font-weight: 400;
-    font-size: 24px;
-    line-height: 34px;
     color: #1d2530;
     margin: 24px 0 34px 0;
   }
@@ -62,17 +53,19 @@ $breakpoint-mobile: 426px;
     padding-top: 40px;
     gap: 50px;
     flex-direction: column;
+    .text_wrap {
+      text-align: center;
+    }
+    .img_wrap {
+      img {
+        width: 300px;
+      }
+    }
   }
 }
 
 
 @media (max-width: 321px) {
   .header {
-    .img_wrap {
-
-      img {
-        width: 300px;
-      }
-    }
   }
 }
