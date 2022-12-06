@@ -15,8 +15,8 @@ export default function Home() {
       <Header />
       <TochaOnline />
       <Tariffs />
-      <Feedback />
       <TelegramChat/>
+      <Feedback />
       <Chat />
       <Footer />
     </div>
