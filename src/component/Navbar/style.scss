@@ -1,10 +1,12 @@
 .navbar {
-  width: 100vw;
+  width: 100%;
   padding-top: 44px;
   padding-bottom: 10px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
   position: sticky;
   top: 0;
   z-index: 1000;
@@ -67,7 +69,6 @@
 
 $breakpoint-tablet: 768px;
 @media (max-width: $breakpoint-tablet) {
-  
   .navbar {
     padding-top: 25px;
     .burger {
@@ -120,9 +121,9 @@ $breakpoint-tablet: 768px;
       .btn {
         width: 80%;
       }
-      .sign_in,.sign_up {
-        width:100%;
-  
+      .sign_in,
+      .sign_up {
+        width: 100%;
       }
     }
   }

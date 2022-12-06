@@ -2,7 +2,7 @@
 
 .tocha-online {
   padding: 70px 0 82px 0;
- background: rgba(242, 247, 255, 0.5);
+  background: rgba(242, 247, 255, 0.5);
   backdrop-filter: blur(50px);
   .container {
     display: flex;
@@ -18,12 +18,12 @@
       display: flex;
       align-items: center;
       gap: 26px;
-    }
-    .box:not(:last-child) {
-      margin-bottom: 48px;
-      .title__box {
-        h6 {
-          margin-bottom: 8px;
+      &:not(:last-child) {
+        margin-bottom: 48px;
+        .title__box {
+          h6 {
+            margin-bottom: 8px;
+          }
         }
       }
     }
@@ -75,6 +75,11 @@
     .left__info-content {
       .box {
         gap: 15px;
+        .image__box{
+          img{
+            width: 50px;
+          }
+        }
       }
     }
   }
