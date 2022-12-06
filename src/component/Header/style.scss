@@ -61,17 +61,19 @@ $breakpoint-mobile: 426px;
     padding-top: 40px;
     gap: 50px;
     flex-direction: column;
+    .text_wrap {
+      text-align: center;
+    }
+    .img_wrap {
+      img {
+        width: 300px;
+      }
+    }
   }
 }
 
 
 @media (max-width: 321px) {
   .header {
-    .img_wrap {
-
-      img {
-        width: 300px;
-      }
-    }
   }
 }

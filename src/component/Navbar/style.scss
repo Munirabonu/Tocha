@@ -69,6 +69,7 @@ $breakpoint-tablet: 768px;
 @media (max-width: $breakpoint-tablet) {
   
   .navbar {
+    padding-top: 25px;
     .burger {
       display: block;
       transition: all 0.5s;
