@@ -3,7 +3,7 @@
     margin: 100px auto;
     width: 40%;
     height: 376px;
-    background: #ffffff;
+    background: #f8f6f6;
     border: 1px solid #e6e9ec;
     box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
     border-radius: 3px;
@@ -11,7 +11,7 @@
     input {
       width: 100%;
       font-size: 18px;
-      padding: 10px 0;
+      padding: 10px ;
       border: none;
       border-bottom: 2px solid #e6e9ec;
       outline: none;
@@ -25,6 +25,43 @@
     p {
       text-align: center;
       margin-top: 20px;
+    }
+  }
+}
+
+@media (max-width:768px){
+  .sign_in {
+    form {
+      width: 60%;
+    }
+  }
+}
+@media (max-width:600px){
+  .sign_in {
+    form {
+      width: 70%;
+    }
+  }
+}
+@media (max-width:425px){
+  .sign_in {
+    form {
+      width: 80%;
+      padding: 30px;
+      input {
+        font-size: 14px;
+      }
+    }
+  }
+}
+@media (max-width:320px){
+  .sign_in {
+    form {
+      width: 90%;
+      padding: 20px;
+      input {
+        font-size: 14px;
+      }
     }
   }
 }

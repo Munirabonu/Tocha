@@ -53,7 +53,7 @@ export default function SignIn() {
           placeholder="Пароль"
         />
         <label htmlFor="password">{formik.errors.password}</label>
-        <input type="submit" value="kirish" className="btn" />
+        <input type="submit" value="Вход" className="btn" />
         <p>
           Не зарегистрирован? ? <Link to={"/signup"}>Регистрация</Link>
         </p>

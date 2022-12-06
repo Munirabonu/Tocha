@@ -1,3 +1,9 @@
+.wrap {
+  background-color: #F2F7FF80;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
 .navbar {
   width: 100vw;
   padding-top: 44px;
@@ -5,10 +11,6 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  background-color: rgba(255, 255, 255, 0.9);
   .logo {
     transition: all 0.3s;
   }
