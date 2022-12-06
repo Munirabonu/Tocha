@@ -1,6 +1,6 @@
 import React from "react";
 import "./Style.scss";
-import tochaOnlineImg from "../../medias/images/tocha-online__img.png";
+import tochaOnlineImg from "../../medias/images/tocha-online__img.svg";
 import telegram from "../../medias/images/telegram-icon.svg";
 import asistent from "../../medias/images/asistent-icon.svg";
 import custom from "../../medias/images/custom-girl-icon.svg";

@@ -28,6 +28,20 @@
       }
     }
   }
+  .right {
+    img {
+      animation: slideMinus 2s ease infinite;
+    }
+  }
+}
+
+@keyframes slideMinus {
+  0% {
+    transform: translateX(-25px);
+  }
+  100% {
+    transform: translateX(50px);
+  }
 }
 
 @media (max-width: 1250px) {
@@ -75,8 +89,8 @@
     .left__info-content {
       .box {
         gap: 15px;
-        .image__box{
-          img{
+        .image__box {
+          img {
             width: 50px;
           }
         }
