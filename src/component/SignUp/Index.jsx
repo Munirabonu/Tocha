@@ -37,7 +37,7 @@ export default function SignUp() {
   });
 
   return (
-    <div className="sign_un">
+    <div className="sign_up">
       <form onSubmit={formik.handleSubmit}>
         <h1 className="title">Регистрация</h1>
         <input
@@ -64,7 +64,8 @@ export default function SignUp() {
           placeholder="Пароль"
         />
         <label htmlFor="password">{formik.errors.password}</label>
-        <input type="submit" value="Регистрация" className="btn" />
+        {/* <input type="submit" value="" className="btn" /> */}
+        <button type="submit" className="btn">Регистрация</button>
       </form>
     </div>
   );

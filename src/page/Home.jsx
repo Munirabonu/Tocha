@@ -13,10 +13,8 @@ import './style.scss';
 export default function Home() {
   return (
     <div>
-      {/* <div className="head"> */}
       <Navbar />
       <Header />
-      {/* </div> */}
       <TochaOnline />
       <Tariffs />
       <TelegramChat/>
