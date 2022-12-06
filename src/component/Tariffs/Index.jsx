@@ -1,5 +1,5 @@
 import React from "react";
-import {data} from "../../utils/CarouselOfTariffsData"
+import { data } from "../../utils/CarouselOfTariffsData";
 
 import AliceCarousel from "react-alice-carousel";
 import "react-alice-carousel/lib/alice-carousel.css";
@@ -25,12 +25,14 @@ function Index() {
       <p className="fs-2432">Стоимость зависит от трафика сайта</p>
       <div className="content__tariffs">
         <AliceCarousel
+          autoPlay
           autoPlayInterval={1500}
           mouseTracking
+          infinite
           disableButtonsControls
           items={items}
           responsive={{
-            0: {
+            320: {
               items: 1,
             },
             768: {

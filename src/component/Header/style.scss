@@ -4,7 +4,9 @@
 .header {
   // padding-top: 80px;
   padding-bottom: 60px;
-  display: flex;
+  .container {
+    display: flex;
+  }
   .text {
     color: #1d2530;
     margin: 24px 0 34px 0;
@@ -54,8 +56,10 @@ $breakpoint-mobile: 426px;
 @media (max-width: $breakpoint-mobile) {
   .header {
     padding-top: 40px;
-    gap: 50px;
-    flex-direction: column;
+    .container {
+      gap: 50px;
+      flex-direction: column;
+    }
     .text_wrap {
       text-align: center;
     }
@@ -65,4 +69,4 @@ $breakpoint-mobile: 426px;
       }
     }
   }
-}
+

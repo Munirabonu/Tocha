@@ -69,6 +69,11 @@ $breakpoint-tablet: 768px;
     max-width: 95%;
   }
 }
+@media (max-width: 600px) {
+  .container {
+    max-width: 90%;
+  }
+}
 *,
 *:after,
 *:before {

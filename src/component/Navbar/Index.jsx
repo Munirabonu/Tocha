@@ -26,8 +26,8 @@ export default function Navbar() {
   }
 
   return (
-    <div className="wrap">
-      <div className="navbar container">
+    <div className="navbar">
+      <div className="container">
         <img src={logo} alt="logo" className="logo" />
         <div className={open ? "mobile_menu close" : "mobile_menu open"}>
           <img

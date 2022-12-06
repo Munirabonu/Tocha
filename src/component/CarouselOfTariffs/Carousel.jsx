@@ -1,6 +1,6 @@
 import React from "react";
 import "./Style.scss";
-function Carousel({ id, action, text, paragraph, btnText }) {
+function Carousel({  action, text, paragraph, btnText }) {
   return (
     <div className="carousel-box">
       <h6 className="fs-2448">{action}</h6>

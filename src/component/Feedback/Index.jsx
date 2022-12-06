@@ -101,6 +101,8 @@ function Index() {
       <h1 className="fs-4664">Отзывы клиентов</h1>
       <img src={quotes} alt="quotes" className="quotes-img" />
       <AliceCarousel
+        infinite
+        autoPlay
         autoPlayInterval={1500}
         mouseTracking
         disableButtonsControls
