@@ -9,7 +9,7 @@ import up from "../../medias/images/up-icon.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-function Index() {
+function TochaOnline() {
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
