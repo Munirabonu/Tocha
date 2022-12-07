@@ -85,7 +85,7 @@ export function CarouselFeedback({ title, author, paragraph, email, image }) {
         <p className="fs-1424">{paragraph}</p>
       </div>
       <div className="feedback--author">
-        <img src={image.type} alt="image of author" />
+        <img src={image.type} alt="author" />
         <div className="author--name">
           <h4 className="fs-1828">{author}</h4>
           <h5 className="fs-1424">{email}</h5>
