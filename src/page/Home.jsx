@@ -8,7 +8,7 @@ import Footer from "../component/Footer/Index";
 import "../scss/styles";
 import Feedback from "../component/Feedback/Index";
 import TelegramChat from "../component/TelegramChat/Index";
-import './style.scss';
+import "./style.scss";
 
 export default function Home() {
   return (
@@ -17,7 +17,7 @@ export default function Home() {
       <Header />
       <TochaOnline />
       <Tariffs />
-      <TelegramChat/>
+      <TelegramChat />
       <Feedback />
       <Chat />
       <Footer />
