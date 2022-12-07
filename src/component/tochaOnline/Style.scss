@@ -28,8 +28,12 @@
       }
     }
   }
+  .right {
+    img {
+      animation: slideMinus 2s ease infinite;
+    }
+  }
 }
-
 @media (max-width: 1250px) {
   .right img {
     width: 100%;
@@ -75,8 +79,8 @@
     .left__info-content {
       .box {
         gap: 15px;
-        .image__box{
-          img{
+        .image__box {
+          img {
             width: 50px;
           }
         }
