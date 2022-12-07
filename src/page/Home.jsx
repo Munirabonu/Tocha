@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../component/Header/Index";
 import Navbar from "../component/Navbar/Index";
-// import TochaOnline from "../component/TochaOnline/Index";
+import TochaOnlineCn from "../component/TochaOnlineCn/Index";
 import Tariffs from "../component/Tariffs/Index";
 import Chat from "../component/JoinChat/Index";
 import Footer from "../component/Footer/Index";
@@ -15,7 +15,7 @@ export default function Home() {
     <div>
       <Navbar />
       <Header />
-      {/* <TochaOnline /> */}
+      <TochaOnlineCn />
       <Tariffs />
       <TelegramChat />
       <Feedback />
