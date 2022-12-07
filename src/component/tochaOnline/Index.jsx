@@ -9,18 +9,19 @@ import up from "../../medias/images/up-icon.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 
-
-
 function Index() {
-  
   useEffect(() => {
     AOS.init({ duration: 3000 });
   }, []);
-
   return (
     <div className="tocha-online">
       <div className="container">
-        <div className="left">
+        <div
+          className="left"
+          data-aos="fade-right"
+          data-aos-offset="300"
+          data-aos-easing="ease-in-sine"
+        >
           <h2 className="fs-4832">Tocha Online — это</h2>
           <div className="left__info-content">
             <div className="box">
@@ -66,7 +67,7 @@ function Index() {
             </div>
           </div>
         </div>
-        <div className="right" data-aos="fade-up-left">
+        <div className="right" data-aos="zoom-in-down">
           <img src={tochaOnlineImg} alt="tochaOnlineImg" />
         </div>
       </div>
