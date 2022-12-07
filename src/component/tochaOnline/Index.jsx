@@ -75,4 +75,4 @@ function TochaOnline() {
   );
 }
 
-export default Index;
+export default TochaOnline;
