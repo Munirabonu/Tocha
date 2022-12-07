@@ -1,11 +1,22 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Style.scss";
 import tochaOnlineImg from "../../medias/images/tocha-online__img.svg";
 import telegram from "../../medias/images/telegram-icon.svg";
 import asistent from "../../medias/images/asistent-icon.svg";
 import custom from "../../medias/images/custom-girl-icon.svg";
 import up from "../../medias/images/up-icon.svg";
+
+import AOS from "aos";
+import "aos/dist/aos.css";
+
+
+
 function Index() {
+  
+  useEffect(() => {
+    AOS.init({ duration: 3000 });
+  }, []);
+
   return (
     <div className="tocha-online">
       <div className="container">
@@ -55,7 +66,7 @@ function Index() {
             </div>
           </div>
         </div>
-        <div className="right">
+        <div className="right" data-aos="fade-up-left">
           <img src={tochaOnlineImg} alt="tochaOnlineImg" />
         </div>
       </div>
