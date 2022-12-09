@@ -14,7 +14,7 @@ export default function Navbar() {
   const state = useSelector((state) => state.login);
   const dispatch = useDispatch();
 
-  const scrollCount=useScroll()
+  const scrollCount = useScroll();
   console.log(scrollCount);
   function menu_Open() {
     setOpen(!open);
@@ -28,7 +28,7 @@ export default function Navbar() {
   }
 
   return (
-    <div className={scrollCount>5 ? 'navbar scroll':'navbar'}>
+    <div className={scrollCount > 5 ? "navbar scroll" : "navbar"}>
       <div className="container">
         <img src={logo} alt="logo" className="logo" />
         <div className={open ? "mobile_menu close" : "mobile_menu open"}>
