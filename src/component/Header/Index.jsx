@@ -1,11 +1,11 @@
 import React, { useEffect } from "react";
 import "./style.scss";
-import header from "../../assets/images/header.png";
+import header from "../../assets/images/header.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
 export default function Header() {
   useEffect(() => {
-    AOS.init({ duration: 3000 });
+    AOS.init({ duration: 1500 });
   }, []);
 
   return (

@@ -6,12 +6,16 @@ import close_icon from "../../assets/icons/close.png";
 import "./style.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { changeLogOutAction } from "../../redux/action/login_action";
+import { useScroll } from "../../hook/position";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
   const navigate = useNavigate();
   const state = useSelector((state) => state.login);
   const dispatch = useDispatch();
+
+  const scrollCount=useScroll()
+  console.log(scrollCount);
   function menu_Open() {
     setOpen(!open);
   }
@@ -20,13 +24,11 @@ export default function Navbar() {
 
   function click_logout() {
     navigate("/");
-    dispatch(
-      changeLogOutAction({ current: false, name: "", email: "", password: "" })
-    );
+    dispatch(changeLogOutAction({ ...state, current: false }));
   }
 
   return (
-    <div className="navbar">
+    <div className={scrollCount>5 ? 'navbar scroll':'navbar'}>
       <div className="container">
         <img src={logo} alt="logo" className="logo" />
         <div className={open ? "mobile_menu close" : "mobile_menu open"}>

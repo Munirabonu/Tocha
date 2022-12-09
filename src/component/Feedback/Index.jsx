@@ -105,7 +105,6 @@ function Index() {
         autoPlay
         autoPlayInterval={1500}
         mouseTracking
-        disableButtonsControls
         items={datas}
         responsive={{
           0: {

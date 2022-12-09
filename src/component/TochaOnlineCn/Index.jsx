@@ -11,7 +11,7 @@ import "aos/dist/aos.css";
 
 function TochaOnlineCn() {
   useEffect(() => {
-    AOS.init({ duration: 3000 });
+    AOS.init({ duration: 1500 });
   }, []);
   return (
     <div className="tocha-online">
@@ -19,8 +19,6 @@ function TochaOnlineCn() {
         <div
           className="left"
           data-aos="fade-right"
-          data-aos-offset="300"
-          data-aos-easing="ease-in-sine"
         >
           <h2 className="fs-4832">Tocha Online — это</h2>
           <div className="left__info-content">

@@ -6,6 +6,7 @@ import "react-alice-carousel/lib/alice-carousel.css";
 
 import "./Style.scss";
 import Carousel from "../CarouselOfTariffs/Carousel";
+
 const items = data.map(({ id, action, text, paragraph, btnText }) => {
   return (
     <Carousel
@@ -14,11 +15,13 @@ const items = data.map(({ id, action, text, paragraph, btnText }) => {
       text={text}
       paragraph={paragraph}
       btnText={btnText}
+      data-value={id}
     />
   );
 });
 
 function Index() {
+
   return (
     <div className="tariffs container">
       <h2 className="fs-4664">Тарифы</h2>
@@ -26,10 +29,10 @@ function Index() {
       <div className="content__tariffs">
         <AliceCarousel
           autoPlay
+          controlsStrategy="alternate"
           autoPlayInterval={1500}
           mouseTracking
           infinite
-          disableButtonsControls
           items={items}
           responsive={{
             320: {

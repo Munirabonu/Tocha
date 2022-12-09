@@ -43,16 +43,22 @@ export default function SignIn() {
           value={formik.values.email}
           id="email"
           placeholder="Эл.адрес"
+          onBlur={formik.handleBlur}
         />
-        <label htmlFor="email">{formik.errors.email}</label>
+        {formik.touched.email && formik.errors.email ? (
+          <label htmlFor="email">{formik.errors.email}</label>
+        ) : null}
         <input
           type="password"
           onChange={formik.handleChange}
           value={formik.values.password}
           id="password"
           placeholder="Пароль"
+          onBlur={formik.handleBlur}
         />
-        <label htmlFor="password">{formik.errors.password}</label>
+         {formik.touched.password && formik.errors.password ? (
+          <label htmlFor="password">{formik.errors.password}</label>
+        ) : null}
         <input type="submit" value="Вход" className="btn" />
         <p>
           Не зарегистрирован? ? <Link to={"/signup"}>Регистрация</Link>

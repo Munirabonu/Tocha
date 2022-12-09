@@ -21,7 +21,7 @@
   margin-top: 24px;
   display: none;
 }
-.alice-carousel__dots-item:not(.__custom) {
+.tariffs .alice-carousel__dots-item:not(.__custom) {
   width: 10px !important;
   height: 10px !important;
   border: 2px solid rgba(104, 94, 214, 0.5);
@@ -32,7 +32,28 @@
 .tariffs .alice-carousel__dots-item:not(.__custom) {
   background: #efefef;
 }
-
+.tariffs .alice-carousel__prev-btn-item,.tariffs .alice-carousel__next-btn-item {
+  position: absolute;
+  color: #465798;
+  background: rgba(195, 196, 197, 0.279);
+  font-size: 25px;
+  font-weight: bolder;
+  width: 35px;
+  height: 35px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all .1s ease;
+}
+.tariffs .alice-carousel__prev-btn-item {
+  left: 46%;
+}
+.tariffs .alice-carousel__prev-btn-item:hover ,.tariffs.alice-carousel__next-btn-item:hover {
+  color: #021e8a;
+  box-shadow: 0 0 5px grey;
+  background: rgba(195, 196, 197, 0.107);
+}
 @media (max-width: 768px) {
   .tariffs .alice-carousel__dots {
     display: block;
