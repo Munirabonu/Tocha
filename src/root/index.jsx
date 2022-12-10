@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import SignIn from "../component/SignIn/Index";
 import SignUp from "../component/SignUp/Index";
 import Home from "../page/Home";
+// const Home=React.lazy(()=>import('../page/Home'))
 
 export const Root = () => {
   return (
