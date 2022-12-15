@@ -26,7 +26,9 @@ export default function Header() {
         position: "bottom-right",
       });
     }
-  },[state.current])
+  },[])
+
+
   return (
     <div className="header">
       <div className="container">
