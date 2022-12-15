@@ -10,7 +10,7 @@ export default function langReducer(state = INITIAL_STATE, { payload, type }) {
     case 'SIGN_IN':
       return {
         ...state,
-        payload
+        current:payload?.current
       }
     case 'SIGN_UP':
       return {

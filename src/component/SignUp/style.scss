@@ -1,67 +1,67 @@
 .sign_up {
+  form {
+    margin: 100px auto;
+    width: 40%;
+    height: 376px;
+    border: 1px solid #e6e9ec;
+    box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
+    border-radius: 3px;
+    padding: 50px;
+    input {
+      width: 100%;
+      font-size: 16px;
+      padding: 10px;
+      border: none;
+      border-bottom: 2px solid #e6e9ec;
+      outline: none;
+      margin-top: 10px;
+      background-color: white;
+    }
+    label {
+      color: red;
+      font-size: 14px;
+      font-weight: 600;
+      margin-top: -5px;
+    }
+    button {
+      width: 100%;
+      margin-top: 20px;
+    }
+  }
+}
+@media (max-width: 768px) {
+  .sign_up {
     form {
-      margin: 100px auto;
-      width: 40%;
-      height: 376px;
-      border: 1px solid #e6e9ec;
-      box-shadow: 0px 10px 30px rgba(13, 38, 59, 0.05);
-      border-radius: 3px;
-      padding: 50px;
+      width: 60%;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .sign_up {
+    form {
+      width: 70%;
+    }
+  }
+}
+@media (max-width: 425px) {
+  .sign_up {
+    form {
+      width: 80%;
+      padding: 30px;
       input {
-        width: 100%;
-          font-size: 16px;
-          padding: 10px;
-        border: none;
-        border-bottom: 2px solid #e6e9ec;
-        outline: none;
-        margin-top: 10px;
-        background-color: white;
-      }
-      label {
-        color: red;
         font-size: 14px;
-        font-weight: 600;
-        margin-top: -5px;
-      }
-      button {
-        width: 100%;
-        margin-top: 20px;
       }
     }
   }
-  @media (max-width:768px){
-    .sign_up {
-      form {
-        width: 60%;
+}
+@media (max-width: 320px) {
+  .sign_up {
+    form {
+      width: 90%;
+      padding: 20px;
+      input {
+        font-size: 14px;
       }
     }
   }
-  @media (max-width:600px){
-    .sign_up {
-      form {
-        width: 70%;
-      }
-    }
-  }
-  @media (max-width:425px){
-    .sign_up {
-      form {
-        width: 80%;
-        padding: 30px;
-        input {
-          font-size: 14px;
-        }
-      }
-    }
-  }
-  @media (max-width:320px){
-    .sign_up {
-      form {
-        width: 90%;
-        padding: 20px;
-        input {
-          font-size: 14px;
-        }
-      }
-    }
-  }
+}

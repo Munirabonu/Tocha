@@ -1,11 +1,11 @@
 .navbar {
-  position: sticky;
-  top: 0;
-  z-index: 1000;
   background-color: #f2f7ff80;
   width: 100%;
   padding: 20px 0;
-  transition: all .2s;
+  transition: all 0.2s;
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   .container {
     display: flex;
     justify-content: space-between;
@@ -13,7 +13,7 @@
   }
   .logo {
     transition: all 0.3s;
-    cursor:cell ;
+    cursor: cell;
   }
   .logo:hover {
     transform: scale(1.05);
@@ -67,12 +67,26 @@
     }
   }
 }
-
 .scroll {
+  position: fixed;
+  top: 0;
+  z-index: 1000;
   backdrop-filter: blur(7.5px);
-  background: rgba(104,94,214, 0.788);
+  background: rgba(104, 94, 214, 0.788);
   box-shadow: 0 5px 15px rgb(0 0 0 / 19%);
+  .links {
+    .link_item {
+      a {
+        color: white;
+        font-weight: 900;
+        &:hover {
+          color: #e3e2ea;
+        }
+      }
+    }
+  }
 }
+
 $breakpoint-tablet: 768px;
 @media (max-width: $breakpoint-tablet) {
   .navbar {
@@ -89,7 +103,7 @@ $breakpoint-tablet: 768px;
       top: 0;
       right: -100%;
       width: 100%;
-      height: 100%;
+      height: 100vh;
       background-color: #f2f7ff;
       padding: 40px;
       transition: all 0.5s;

@@ -3,11 +3,30 @@ import "./style.scss";
 import header from "../../assets/images/header.svg";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import toast, { Toaster } from "react-hot-toast";
+import {  useSelector } from "react-redux";
+
+
 export default function Header() {
+
+  const state = useSelector((state) => state.login);
+
   useEffect(() => {
     AOS.init({ duration: 1500 });
   }, []);
-
+  useEffect(()=>{
+    if (state.current) {
+      toast.success("Вы успешно из в систему", {
+        style: {
+          background: "rgb(104,94,214)",
+          color: "white",
+          border: "1px solid #00715c8d",
+        },
+        duration:4000,
+        position: "bottom-right",
+      });
+    }
+  },[state.current])
   return (
     <div className="header">
       <div className="container">
@@ -26,6 +45,7 @@ export default function Header() {
           <img src={header} alt="header" />
         </div>
       </div>
+      <Toaster />
     </div>
   );
 }

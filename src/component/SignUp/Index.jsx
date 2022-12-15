@@ -17,7 +17,6 @@ export default function SignUp() {
     },
     onSubmit: (item) => {
       if (state.email === item.email && state.password === item.password) {
-        alert("Вы зарегистрированы");
         navigate("/signin");
       } else {
         navigate("/home");
@@ -49,7 +48,6 @@ export default function SignUp() {
           onChange={formik.handleChange}
           onBlur={formik.handleBlur}
         />
-        {/* <label htmlFor="email">{formik.errors.name}</label> */}
         {formik.touched.name && formik.errors.name ? (
           <label htmlFor="name">{formik.errors.name}</label>
         ) : null}
@@ -77,7 +75,7 @@ export default function SignUp() {
         {formik.touched.password && formik.errors.password ? (
           <label htmlFor="password">{formik.errors.password}</label>
         ) : null}
-        <button type="submit" className="btn">
+        <button type="submit" className="btn"  >
           Регистрация
         </button>
       </form>

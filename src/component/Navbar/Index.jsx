@@ -7,9 +7,12 @@ import "./style.scss";
 import { useDispatch, useSelector } from "react-redux";
 import { changeLogOutAction } from "../../redux/action/login_action";
 import { useScroll } from "../../hook/position";
+import Modal from "react-modal";
 
 export default function Navbar() {
   const [open, setOpen] = useState(false);
+  const [modalIsOpen, setIsOpen] = useState(false);
+
   const navigate = useNavigate();
   const state = useSelector((state) => state.login);
   const dispatch = useDispatch();
@@ -25,6 +28,26 @@ export default function Navbar() {
   function click_logout() {
     navigate("/");
     dispatch(changeLogOutAction({ ...state, current: false }));
+    closeModal();
+  }
+
+  const customStyles = {
+    content: {
+      top: "50%",
+      left: "50%",
+      right: "auto",
+      bottom: "auto",
+      marginRight: "-50%",
+      transform: "translate(-50%, -50%)",
+      display: "grid",
+      gap: "10px",
+    },
+  };
+  function openModal() {
+    setIsOpen(true);
+  }
+  function closeModal() {
+    setIsOpen(false);
   }
 
   return (
@@ -57,7 +80,7 @@ export default function Navbar() {
                 </Link>
               </li>
               <li className="link_item">
-                <Link className="fs-1626" to="/" onClick={click_logout}>
+                <Link className="fs-1626" to="/" onClick={openModal}>
                   Выход
                 </Link>
               </li>
@@ -73,8 +96,29 @@ export default function Navbar() {
             </div>
           )}
         </div>
-
         <img src={burger} className="burger" alt="burger" onClick={menu_Open} />
+
+        {/* modal for exit choose */}
+        <Modal
+          isOpen={modalIsOpen}
+          onRequestClose={closeModal}
+          style={customStyles}
+          contentLabel="Example Modal"
+        >
+          <img
+            src={close_icon}
+            alt="close"
+            className="close_modal"
+            onClick={closeModal}
+          />
+          <div>chiqishni hohlaysizmi</div>
+          <button onClick={closeModal} className="clear btn">
+            yoq
+          </button>
+          <button onClick={click_logout} className="save btn">
+            ha
+          </button>
+        </Modal>
       </div>
     </div>
   );

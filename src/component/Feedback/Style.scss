@@ -104,3 +104,11 @@
   color: #031b72;
   transform: scale(1.01);
 }
+@media (max-width: 768px) {
+  .feedback .alice-carousel__dots {
+    display: block;
+  }
+  .feedback .alice-carousel__prev-btn,.feedback .alice-carousel__next-btn {
+    display: none;
+  }
+}

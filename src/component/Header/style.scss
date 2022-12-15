@@ -59,7 +59,7 @@ $breakpoint-tablet: 768px;
 $breakpoint-mobile: 426px;
 @media (max-width: $breakpoint-mobile) {
   .header {
-    padding-top: 40px;
+    padding-top: 80px;
     .container {
       gap: 50px;
       flex-direction: column;
