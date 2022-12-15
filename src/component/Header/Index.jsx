@@ -26,7 +26,7 @@ export default function Header() {
         position: "bottom-right",
       });
     }
-  },[])
+  })
 
 
   return (
